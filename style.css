@@ -1,11 +1,21 @@
 .block{
   background-image: url('background.png');
+  position:relative;
+  overflow:hidden;
+  border-radius:0 0 50% 50%;
+  height: 600px
 }
 .row1{
-  padding-top: 20px;
+  margin-top: 20px;
 }
 .row2{
   margin-top: 100px;
+}
+.row6{
+  margin-top: 40px;
+}
+.row7{
+  margin-top: 20px;
 }
 .logo{
   margin-left: 70px;
@@ -17,8 +27,23 @@
   font-size: 16px;
   font-weight: 600;
 }
+.btn-success{
+  background-color: #31d078;
+}
+.outline{
+  width: 210px;
+}
 .nav{
   font-size: 16px;
+}
+.flecha{
+  width: 71px;
+  height: 71px;
+  border-radius: 50%;
+  margin-left: 60px;
+  margin-top: -40px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(148, 148, 148, 0.5);
 }
 .nav-link{
   font-weight: 600;
@@ -36,4 +61,22 @@
   font-size: 24px;
   font-weight: 400;
   color: #ffffff;
+}
+.p1{
+  text-align: center;
+  width: 596px;
+  height: 78px;
+  font-size: 35px;
+  font-weight: 600;
+  margin-left: 25px;
+  margin-top: 50px;
+}
+.p2{
+  text-align: center;
+  width: 566px;
+  height: 44px;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 45px;
+  margin-top: 20px;
 }
