@@ -1,4 +1,39 @@
+.block{
+  background-image: url('background.png');
+}
 .row1{
   padding-top: 20px;
-  background-color: purple;
+}
+.row2{
+  margin-top: 100px;
+}
+.logo{
+  margin-left: 70px;
+}
+.btn{
+  border-radius: 10px;
+  width: 164px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.nav{
+  font-size: 16px;
+}
+.nav-link{
+  font-weight: 600;
+  color: #ffffff;
+}
+.title{
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.subtitle{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
 }
