@@ -4,7 +4,7 @@
   overflow:hidden;
   border-radius: 0 0 50% 50%;
   height: 600px;
-  width: 1450px;
+  width: 1350px;
   align-self: center;
 }
 .block2{
@@ -349,14 +349,12 @@
   position: relative;
   top: 0;
   left: 0;
-  border: 1px solid #000000;
 }
 .p-15-i-4{
   margin: auto;
   position: absolute;
   top: 70px;
   left: 250px;
-  border: 1px solid #000000;
 }
 .p-16-1{
   width: 528px;
