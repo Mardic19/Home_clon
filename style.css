@@ -80,10 +80,10 @@
 }
 .row-12{
   margin-top: 71px;
-  margin-bottom: 140px;
+  margin-bottom: 66px;
 }
 .row-13{
-  margin-top: 60px;
+  text-align: center;
 }
 .row-14{
   margin-top: 50px;
@@ -118,7 +118,7 @@
   margin: auto;
 }
 .container{
-  box-shadow: 0 2px 4px rgba(148, 148, 148, 0.5);
+  box-shadow: 0 2px 4px rgba(148, 148, 148, 1);
   border-radius: 10px;
 }
 .col-3{
@@ -440,6 +440,7 @@
   height: 153;
   margin: auto;
   margin-top: -70px;
+
 }
 .p-15-1{
   width: 546px;
@@ -548,10 +549,13 @@
 }
 
 .carousel{
-  margin-top: 100px;
+  margin: auto;
+  height: 391px;
 }
 .carousel-inner{
-  width: 100%;
+  width: 250px;
+  height: 350px;
+  padding-top: 70px;
   text-align: center;
 }
 .carousel-item{
@@ -561,11 +565,11 @@
   display: inline-block;
   margin: 0 auto;
   border-bottom: none;
+  padding-top: 0px;
 }
-.slide{
-  background-color: blue;
-  height: 300px;
+.carousel-indicators{
+  margin-top: 50px;
 }
-.d-block{
-  margin: auto;
+.carousel-indicators li{
+  text-indent: 0px;
 }
