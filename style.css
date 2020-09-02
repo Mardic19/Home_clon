@@ -581,6 +581,15 @@
   margin: auto;
   height: 391px;
 }
+#carousel div.carousel-inner{
+  height: 300px;
+}
+.carousel-item-right div img{
+  display: none;
+}
+.carousel-item-prev div img{
+  display: block;
+}
 .carousel-inner{
   width: 250px;
   height: 350px;
@@ -612,6 +621,7 @@
 .carousel-indicators li{
   text-indent: 0px;
 }
+
 
 @media (max-width: 425px){
   .container-fluid{
