@@ -14,6 +14,7 @@
     <div class="container-fluid">
       <div class="block1">
         <img src="background.png" class="bg">
+        <img src="background2.png" class="bg-mobile">
         <div class="a">
           <div class="row row-1">
             <div class="col-2">
@@ -23,7 +24,7 @@
               <nav>
                 <ul class="nav justify-content-center">
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">HOME</a>
+                    <a class="nav-link active-link" href="#">HOME</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">CURSOS</a>
@@ -37,9 +38,38 @@
                 </ul>
               </nav>
             </div>
-            <div class="col-4">
+            <div class="col-4 login">
               <button type="button" class="btn btn-success">Iniciar sesión</button>
               <button type="button" class="btn btn-outline-light">Crear cuenta</button>
+            </div>
+            <div class="col-1 offset-7 dropdown-1">
+              <div class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle drop-1" data-toggle="collapse" data-target=".navbar-collapse">
+                    <img src="lines.png" class="lines">
+                  </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active-link" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">CURSOS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">EVENTOS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">CONTACTO</a>
+                    </li>
+                  </ul>
+                  <ul class="nav navbar-nav">
+                    <li><button type="button" class="btn btn-success">Iniciar sesión</button></li>
+                    <li><button type="button" class="btn btn-outline-light">Crear cuenta</button></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
           <div class="row row-2">
@@ -52,16 +82,16 @@
       </div>
       <div class="row row-3">
         <div class="col-lg-2 offset-lg-5 col-2 offset-5 center">
-          <button type="button" class="btn flecha" onclick="gotoBottom()"> <img src="flecha.png"> </button>
+          <button type="button" class="btn btn-flecha" onclick="gotoBottom()"> <img src="flecha.png" class="flecha"> </button>
         </div>
       </div>
       <div class="row row-4">
-        <div class="col-lg-6 offset-lg-3 col-6 offset-3">
+        <div class="col-sm-6 offset-sm-3 col-10 offset-1">
           <div class="row row-4-1 center">
-            <h6 class="p-4-1">Academias de aprendizaje según <br>donde quieres crecer</h6>
+            <h6 class="p-4-1"> Academias de aprendizaje según donde quieres crecer </h6>
           </div>
           <div class="row row-4-2 center">
-            <h6 class="p-4-2">Re-inventamos la educación y te ofrecemos curso que te<br> ayudaran en el reskilling & upskilling</h6>
+            <h6 class="p-4-2">Re-inventamos la educación y te ofrecemos curso que te ayudaran en el reskilling & upskilling.</h6>
           </div>
         </div>
       </div>
@@ -79,6 +109,34 @@
           <button type="button" class="btn btn-outline-secondary outline">Academia de Data</button>
         </div>
       </div>
+      <div class="row row-5-1">
+        <div class="col-12 dropdown-2">
+          <div class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="btn btn-outline-success outline-1 drop-2 navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">Todas las academias <img src="flecha_green.png" class="drop-i"> </button>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="nav-item">
+                  <button type="button" class="btn btn-outline-secondary outline">Academia de Agilidad</button>
+                </li>
+                <li class="nav-item">
+                  <button type="button" class="btn btn-outline-secondary outline">Academia de Experiencia</button>
+                </li>
+                <li class="nav-item">
+                  <button type="button" class="btn btn-outline-secondary outline">Academia de Data</button>
+                </li>
+                <li class="nav-item">
+                  <button type="button" class="btn btn-outline-secondary outline">Academia de Tecnología</button>
+                </li>
+                <li class="nav-item">
+                  <button type="button" class="btn btn-outline-secondary outline">Academia de Negocio</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="row row-6">
         <div class="col-2 b-5">
           <button type="button" class="btn btn-outline-secondary outline">Academia de Tecnología</button>
@@ -88,84 +146,84 @@
         </div>
       </div>
       <div class="row row-7">
-        <div class="col-2 c c-1">
-          <div class="container c-7">
+        <div class="col-sm-2 col-6 c c-1">
+          <div class="container c-7 c-a">
             <div class="row"><img src="people.png" class="p-7-i"> </div>
             <div class="row"><p class="p-7-1">Transformacion Digital</p></div>
             <div class="row"><h6 class="p-7-2">Introducción a<br> las Metodologías Ágiles</h6> </div>
             <div class="row">
               <div class="col-2">
-                <img src="lilpersons.png">
+                <img src="lilpersons.png" class="p-7-i2">
               </div>
-              <div class="col-4">
-                <p class="p-7-3">345 alumnos</p>
+              <div class="col-sm-4 col-9">
+                <p class="p-7-3">345 Alumnos</p>
               </div>
-              <div class="col-5 offset-1">
-                <img src="star.png">
-                <a class="p-7-3">4,8</a>
+              <div class="col-12 col-sm-5 offset-sm-1">
+                <img src="star.png" class="p-7-i3">
+                <h6 class="p-7-4">4,8</h6>
               </div>
             </div>
-            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="shopcart.png" class="cart"><span class="d">S/150.00</span></button></div>
+            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="shopcart.png" class="cart"><h6 class="d">S/150.00</h6></button></div>
           </div>
         </div>
-        <div class="col-2 c">
-          <div class="container c-7">
+        <div class="col-sm-2 col-6 c">
+          <div class="container c-7 c-b">
             <div class="row"><img src="people.png" class="p-7-i"> </div>
             <div class="row"><p class="p-7-1">Transformacion Digital</p></div>
             <div class="row"><h6 class="p-7-2">Introducción a<br> las Metodologías Ágiles </h6> </div>
             <div class="row">
               <div class="col-2">
-                <img src="lilpersons.png">
+                <img src="lilpersons.png" class="p-7-i2">
               </div>
               <div class="col-4">
-                <p class="p-7-3">345 alumnos</p>
+                <p class="p-7-3">345 Alumnos</p>
               </div>
-              <div class="col-5 offset-1">
-                <img src="star.png">
-                <a class="p-7-3">4,8</a>
+              <div class="col-12 col-sm-5 offset-sm-1">
+                <img src="star.png" class="p-7-i3">
+                <h6 class="p-7-4">4,8</h6>
               </div>
             </div>
-            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="shopcart.png" class="cart"><span class="d">Gratis</span></button></div>
+            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="shopcart.png" class="cart"><h6 class="d">Gratis</h6></button></div>
           </div>
         </div>
-        <div class="col-2 c">
-          <div class="container c-7">
+        <div class="col-sm-2 col-6 c">
+          <div class="container c-7 c-a c-c">
             <div class="row"><img src="people.png" class="p-7-i"> </div>
             <div class="row"><p class="p-7-1">Transformacion Digital</p></div>
             <div class="row"><h6 class="p-7-2">Introducción a<br> las Metodologías Ágiles </h6> </div>
             <div class="row">
               <div class="col-2">
-                <img src="lilpersons.png">
+                <img src="lilpersons.png" class="p-7-i2">
               </div>
               <div class="col-4">
-                <p class="p-7-3">345 alumnos</p>
+                <p class="p-7-3">345 Alumnos</p>
               </div>
-              <div class="col-5 offset-1">
-                <img src="star.png">
-                <a class="p-7-3">4,8</a>
+              <div class="col-12 col-sm-5 offset-sm-1">
+                <img src="star.png" class="p-7-i3">
+                <h6 class="p-7-4">4,8</h6>
               </div>
             </div>
-            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="shopcart.png" class="cart"><span class="d">S/150.00</span></button></div>
+            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="shopcart.png" class="cart"><h6 class="d">S/150.00</h6></button></div>
           </div>
         </div>
-        <div class="col-2 c">
-          <div class="container c-7">
+        <div class="col-sm-2 col-6 c">
+          <div class="container c-7 c-b c-c" class="p-7-i2">
             <div class="row"><img src="people.png" class="p-7-i"> </div>
             <div class="row"><p class="p-7-1">Transformacion Digital</p></div>
             <div class="row"><h6 class="p-7-2">Introducción a<br> las Metodologías Ágiles </h6> </div>
             <div class="row">
               <div class="col-2">
-                <img src="lilpersons.png">
+                <img src="lilpersons.png" class="p-7-i2">
               </div>
               <div class="col-4">
-                <p class="p-7-3">345 alumnos</p>
+                <p class="p-7-3">345 Alumnos</p>
               </div>
-              <div class="col-5 offset-1">
-                <img src="star.png">
-                <a class="p-7-3">4,8</a>
+              <div class="col-12 col-sm-5 offset-sm-1">
+                <img src="star.png" class="p-7-i3">
+                <h6 class="p-7-4">4,8</h6>
               </div>
             </div>
-            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="shopcart.png" class="cart"><span class="d">S/150.00</span></button></div>
+            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="shopcart.png" class="cart"><h6 class="d">S/150.00</h6></button></div>
           </div>
         </div>
       </div>
@@ -177,17 +235,17 @@
             <div class="row"><h6 class="p-7-2">Introducción a<br> las Metodologías Ágiles </h6> </div>
             <div class="row">
               <div class="col-2">
-                <img src="lilpersons.png">
+                <img src="lilpersons.png" class="p-7-i2">
               </div>
               <div class="col-4">
-                <p class="p-7-3">345 alumnos</p>
+                <p class="p-7-3">345 Alumnos</p>
               </div>
               <div class="col-5 offset-1">
-                <img src="star.png">
-                <a class="p-7-3">4,8</a>
+                <img src="star.png" class="p-7-i3">
+                <h6 class="p-7-4">4,8</h6>
               </div>
             </div>
-            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="shopcart.png" class="cart"><span class="d">S/150.00</span></button></div>
+            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="shopcart.png" class="cart"><h6 class="d">S/150.00</h6></button></div>
           </div>
         </div>
         <div class="col-2 c">
@@ -197,17 +255,17 @@
             <div class="row"><h6 class="p-7-2">Introducción a<br> las Metodologías Ágiles </h6> </div>
             <div class="row">
               <div class="col-2">
-                <img src="lilpersons.png">
+                <img src="lilpersons.png" class="p-7-i2">
               </div>
               <div class="col-4">
-                <p class="p-7-3">345 alumnos</p>
+                <p class="p-7-3">345 Alumnos</p>
               </div>
               <div class="col-5 offset-1">
-                <img src="star.png">
-                <a class="p-7-3">4,8</a>
+                <img src="star.png" class="p-7-i3">
+                <h6 class="p-7-4">4,8</h6>
               </div>
             </div>
-            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="shopcart.png" class="cart"><span class="d">Gratis</span></button></div>
+            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="shopcart.png" class="cart"><h6 class="d">Gratis</h6></button></div>
           </div>
         </div>
         <div class="col-2 c">
@@ -217,17 +275,17 @@
             <div class="row"><h6 class="p-7-2">Introducción a<br> las Metodologías Ágiles </h6> </div>
             <div class="row">
               <div class="col-2">
-                <img src="lilpersons.png">
+                <img src="lilpersons.png" class="p-7-i2">
               </div>
               <div class="col-4">
-                <p class="p-7-3">345 alumnos</p>
+                <p class="p-7-3">345 Alumnos</p>
               </div>
               <div class="col-5 offset-1">
-                <img src="star.png">
-                <a class="p-7-3">4,8</a>
+                <img src="star.png" class="p-7-i3">
+                <h6 class="p-7-4">4,8</h6>
               </div>
             </div>
-            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="shopcart.png" class="cart"><span class="d">Gratis</span></button></div>
+            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="shopcart.png" class="cart"><h6 class="d">Gratis</h6></button></div>
           </div>
         </div>
         <div class="col-2 c">
@@ -237,36 +295,28 @@
             <div class="row"><h6 class="p-7-2">Introducción a<br> las Metodologías Ágiles </h6> </div>
             <div class="row">
               <div class="col-2">
-                <img src="lilpersons.png">
+                <img src="lilpersons.png" class="p-7-i2">
               </div>
               <div class="col-4">
-                <p class="p-7-3">345 alumnos</p>
+                <p class="p-7-3">345 Alumnos</p>
               </div>
               <div class="col-5 offset-1">
-                <img src="star.png">
-                <a class="p-7-3">4,8</a>
+                <img src="star.png" class="p-7-i3">
+                <h6 class="p-7-4">4,8</h6>
               </div>
             </div>
-            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="shopcart.png" class="cart"><span class="d">S/150.00</span></button></div>
+            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="shopcart.png" class="cart"><h6 class="d">S/150.00</h6></button></div>
           </div>
         </div>
       </div>
-      <div class="row row-9">
-        <div class="col-2 offset-5">
-          <div class="row center">
-            <button type="button" class="btn btn-success cursos">Ver todos los cursos</button>
-          </div>
-        </div>
+      <div class="row row-9 center">
+        <button type="button" class="btn btn-success cursos">Ver todos los cursos</button>
       </div>
       <div class="block2">
-        <div class="row row-10">
-          <div class="col-6 offset-3">
-            <div class="row center">
-              <p class="p-10-1">Tipos de Entrenamiento</p>
-            </div>
-            <div class="row center">
-              <h6 class="p-10-2">Re-inventamos la educación y te ofrecemos cursos que te ayudaran en el reskilling & upskilling.</h6>
-            </div>
+        <div class="row row-10 center">
+          <div class="col-sm-6 offset-sm-3 col-12">
+            <p class="p-10-1">Tipos de Entrenamiento</p>
+            <h6 class="p-10-2">Re-inventamos la educación y te ofrecemos cursos que te ayudaran en el reskilling & upskilling.</h6>
           </div>
         </div>
         <div class="row row-11">
@@ -343,9 +393,93 @@
             </div>
           </div>
         </div>
+        <div class="row-11-5">
+          <div id="carousel-2" class="carousel slide" data-ride="carousel2">
+            <ol class="carousel-indicators indicators-2">
+              <li data-target="#carousel-2" data-slide-to="0" class="ind-2 active"> <img src="circulo.png" class="circle-2"> </li>
+              <li data-target="#carousel-2" data-slide-to="1" class="ind-2"> <img src="circulo.png" class="circle-2"> </li>
+              <li data-target="#carousel-2" data-slide-to="2" class="ind-2"> <img src="circulo.png" class="circle-2"> </li>
+              <li data-target="#carousel-2" data-slide-to="3" class="ind-2"> <img src="circulo.png" class="circle-2"> </li>
+            </ol>
+            <div class="carousel-inner carousel-2">
+              <div class="carousel-item e-c active">
+                <div class="row">
+                  <div class="col-4 col-sm-6">
+                    <p class="p-11-1">01</p>
+                  </div>
+                  <div class="col-8 col-sm-6">
+                    <div class="row">
+                      <img src="aprendizajeOnline.png" class="p-11-i">
+                    </div>
+                    <div class="row">
+                      <p class="p-11-2">Aprendizaje<br> Online</p>
+                    </div>
+                    <div class="row">
+                      <p class="p-11-3">Re-inventamos la<br> educación y te<br> ofrecemos cursos que<br> te ayudaran.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item e-c">
+                <div class="row">
+                  <div class="col-4 col-sm-6">
+                    <p class="p-11-1">02</p>
+                  </div>
+                  <div class="col-8 col-sm-6">
+                    <div class="row">
+                      <img src="workshopsBootcamps.png" class="p-11-i">
+                    </div>
+                    <div class="row">
+                      <p class="p-11-2">Workshops y Bootcamps</p>
+                    </div>
+                    <div class="row">
+                      <p class="p-11-3">Re-inventamos la<br> educación y te<br> ofrecemos cursos que<br> te ayudaran.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item e-c">
+                <div class="row">
+                  <div class="col-4 col-sm-6">
+                    <p class="p-11-1">03</p>
+                  </div>
+                  <div class="col-8 col-sm-6">
+                    <div class="row">
+                      <img src="coachingMentoring.png" class="p-11-i">
+                    </div>
+                    <div class="row">
+                      <p class="p-11-2">Coaching y Mentoring</p>
+                    </div>
+                    <div class="row">
+                      <p class="p-11-3">Re-inventamos la<br> educación y te<br> ofrecemos cursos que<br> te ayudaran.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item e-c">
+                <div class="row">
+                  <div class="col-4 col-sm-6">
+                    <p class="p-11-1">04</p>
+                  </div>
+                  <div class="col-8 col-sm-6">
+                    <div class="row">
+                      <img src="upskillAssesment.png" class="p-11-i">
+                    </div>
+                    <div class="row">
+                      <p class="p-11-2">Upskill<br> Assesment</p>
+                    </div>
+                    <div class="row">
+                      <p class="p-11-3">Re-inventamos la<br> educación y te<br> ofrecemos cursos que<br> te ayudaran.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="row row-12">
-        <div class="col-6 offset-3">
+        <div class="col-10 offset-1 col-sm-6 offset-sm-3">
           <div class="row center">
             <p class="p-12-1">Nuestros Mentores</p>
           </div>
@@ -356,14 +490,14 @@
       </div>
       <div class="row row-13">
         <div id="carousel" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carousel" data-slide-to="0" class="circle active"> <img src="circulo.png" alt=""> </li>
-            <li data-target="#carousel" data-slide-to="1" class="circle"> <img src="circulo.png" alt=""> </li>
-            <li data-target="#carousel" data-slide-to="2" class="circle"> <img src="circulo.png" alt=""> </li>
-            <li data-target="#carousel" data-slide-to="3" class="circle"> <img src="circulo.png" alt=""> </li>
-            <li data-target="#carousel" data-slide-to="4" class="circle"> <img src="circulo.png" alt=""> </li>
+          <ol class="carousel-indicators indicators-1">
+            <li data-target="#carousel" data-slide-to="0" class="ind-1 active"> <img src="circulo.png" class="circle"> </li>
+            <li data-target="#carousel" data-slide-to="1" class="ind-1"> <img src="circulo.png" class="circle"> </li>
+            <li data-target="#carousel" data-slide-to="2" class="ind-1"> <img src="circulo.png" class="circle"> </li>
+            <li data-target="#carousel" data-slide-to="3" class="ind-1"> <img src="circulo.png" class="circle"> </li>
+            <li data-target="#carousel" data-slide-to="4" class="ind-1"> <img src="circulo.png" class="circle"> </li>
           </ol>
-          <div class="carousel-inner">
+          <div class="carousel-inner carousel-1">
             <div class="carousel-item container c-13 center active">
               <div class="row"><img src="mentores.png" class="p-13-i"></div>
               <div class="row"><p class="p-13-1">Abner Ballardo</p></div>
@@ -399,14 +533,14 @@
       </div>
       <div class="block3">
         <div class="row row-15">
-          <div class="col-5 f-1">
-            <div class="row-15-1">
+          <div class="col-6 col-sm-5 order-sm-1 order-2 f-1">
+            <div class="row row-15-1">
               <h6 class="p-15-1">¿Quieres una capacitación<br> personalizada para tu equipo?</h6>
             </div>
-            <div class="row-15-2">
+            <div class="row row-15-2">
               <p class="p-15-2">Contactate con nosotros:</p>
             </div>
-            <div class="row-15-3">
+            <div class="row row-15-3">
               <div class="col-12">
                 <img src="mail.png" class="p-15-i">
                 <span class="p-15-3">hola@enestadobeta.la </span>
@@ -415,7 +549,7 @@
               </div>
             </div>
           </div>
-          <div class="col-5 f-2">
+          <div class="col-5 col-sm-5 order-sm-2 order-1 f-2">
             <div class="row center parent">
               <img src="bigphone.png" class="p-15-i-3">
               <img src="logochar.png" class="p-15-i-4">
@@ -424,12 +558,12 @@
         </div>
       </div>
       <div class="row row-16">
-        <div class="col-6 offset-3">
+        <div class="col-10 offset-1 col-sm-6 offset-sm-3">
           <div class="row center">
             <p class="p-16-1">Estas empresas ya confiaron en nosotros</p>
           </div>
         </div>
-        <div class="col-6 offset-3">
+        <div class="col-10 offset-1 col-sm-6 offset-sm-3">
           <div class="row center">
             <p class="p-16-2">con las mejores capacitaciones en transformación digital para sus equipos</p>
           </div>
@@ -451,6 +585,12 @@
         </div>
       </footer>
     </div>
+
+    <script type="text/javascript">
+      $('.carousel').carousel({
+        interval: false;
+      })
+    </script>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
