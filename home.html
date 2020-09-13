@@ -13,16 +13,16 @@
   <body>
     <div class="container-fluid">
       <div class="block1">
-        <img src="background.png" class="bg">
-        <img src="background2.png" class="bg-mobile">
+        <img src="images/background.png" class="bg">
+        <img src="images/background2.png" class="bg-mobile">
         <div class="a">
           <div class="row row-1">
             <div class="col-2">
-              <img src="logo.png" class="p-1-i">
+              <img src="images/logo.png" class="p-1-i">
             </div>
-            <div class="col-4 offset-2 nav">
+            <div class="col-xl-4 offset-xl-2 col-md-6 offset-md-1 nav">
               <nav>
-                <ul class="nav justify-content-center">
+                <ul class="nav">
                   <li class="nav-item">
                     <a class="nav-link active-link" href="#">HOME</a>
                   </li>
@@ -38,35 +38,43 @@
                 </ul>
               </nav>
             </div>
-            <div class="col-4 login">
-              <button type="button" class="btn btn-success">Iniciar sesión</button>
-              <button type="button" class="btn btn-outline-light">Crear cuenta</button>
+            <div class="col-xl-4 col-md-3 login">
+              <div class="row row-cols-md-1 row-cols-xl-2">
+                <div class="col">
+                  <button type="button" class="btn btn-success b-login">Iniciar sesión</button>
+                </div>
+                <div class="col">
+                  <button type="button" class="btn btn-outline-light b-singup">Crear cuenta</button>
+                </div>
+              </div>
             </div>
             <div class="col-1 offset-7 dropdown-1">
               <div class="navbar navbar-default" role="navigation">
                 <div class="navbar-header">
                   <button type="button" class="navbar-toggle drop-1" data-toggle="collapse" data-target=".navbar-collapse">
-                    <img src="lines.png" class="lines">
+                    <img src="images/lines.png" class="lines">
                   </button>
                 </div>
-                <div class="navbar-collapse collapse">
-                  <ul class="nav navbar-nav">
-                    <li class="nav-item">
+                <div class="navbar-collapse collapse nav-mobile">
+                  <ul>
+                    <li class="nav-mobile-item">
                       <a class="nav-link active-link" href="#">HOME</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-mobile-item">
                       <a class="nav-link" href="#">CURSOS</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-mobile-item">
                       <a class="nav-link" href="#">EVENTOS</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-mobile-item">
                       <a class="nav-link" href="#">CONTACTO</a>
                     </li>
-                  </ul>
-                  <ul class="nav navbar-nav">
-                    <li><button type="button" class="btn btn-success">Iniciar sesión</button></li>
-                    <li><button type="button" class="btn btn-outline-light">Crear cuenta</button></li>
+                    <li class="nav-mobile-item">
+                      <a class="nav-link" href="#">INICIAR SESIÓN</a>
+                    </li>
+                    <li class="nav-mobile-item">
+                      <a class="nav-link" href="#">CREAR CUENTA</a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -81,12 +89,12 @@
         </div>
       </div>
       <div class="row row-3">
-        <div class="col-lg-2 offset-lg-5 col-2 offset-5 center">
-          <button type="button" class="btn btn-flecha" onclick="gotoBottom()"> <img src="flecha.png" class="flecha"> </button>
+        <div class="col-md-2 offset-md-5 col-2 offset-5 center">
+          <button type="button" class="btn btn-flecha" onclick="gotoBottom()"> <img src="images/flecha.png" class="flecha"> </button>
         </div>
       </div>
-      <div class="row row-4">
-        <div class="col-sm-6 offset-sm-3 col-10 offset-1">
+      <div class="row row-4 justify-content-center">
+        <div class="col">
           <div class="row row-4-1 center">
             <h6 class="p-4-1"> Academias de aprendizaje según donde quieres crecer </h6>
           </div>
@@ -96,41 +104,41 @@
         </div>
       </div>
       <div class="row row-5">
-        <div class="col-2 offset-2 b-1">
+        <div class="col-xl-2 col offset-xl-2 b-1">
           <button type="button" class="btn btn-outline-success outline outline-1">Todas las academias</button>
         </div>
-        <div class="col-2 b-2">
+        <div class="col-xl-2 col b-2">
           <button type="button" class="btn btn-outline-secondary outline">Academia de Agilidad</button>
         </div>
-        <div class="col-2 b-3">
+        <div class="col-xl-2 col b-3">
           <button type="button" class="btn btn-outline-secondary outline">Academia de Experiencia</button>
         </div>
-        <div class="col-2 b-4">
+        <div class="col-xl-2 col b-4">
           <button type="button" class="btn btn-outline-secondary outline">Academia de Data</button>
         </div>
       </div>
-      <div class="row row-5-1">
-        <div class="col-12 dropdown-2">
-          <div class="navbar navbar-default" role="navigation">
+      <div class="row row-5-1 center">
+        <div class="col dropdown-2">
+          <div class="navbar-default academies" role="navigation">
             <div class="navbar-header">
-              <button type="button" class="btn btn-outline-success outline-1 drop-2 navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">Todas las academias <img src="flecha_green.png" class="drop-i"> </button>
+              <button type="button" class="btn btn-outline-success outline-1 drop-2 navbar-toggle" data-toggle="collapse" data-target=".academies-collapse">Todas las academias <img src="images/flecha_green.png" class="drop-i"> </button>
             </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="nav-item">
-                  <button type="button" class="btn btn-outline-secondary outline">Academia de Agilidad</button>
+            <div class="academies-collapse collapse center">
+              <ul>
+                <li>
+                  <button type="button" class="btn btn-outline-secondary outline aca-item">Academia de Agilidad</button>
                 </li>
-                <li class="nav-item">
-                  <button type="button" class="btn btn-outline-secondary outline">Academia de Experiencia</button>
+                <li>
+                  <button type="button" class="btn btn-outline-secondary outline aca-item">Academia de Experiencia</button>
                 </li>
-                <li class="nav-item">
-                  <button type="button" class="btn btn-outline-secondary outline">Academia de Data</button>
+                <li>
+                  <button type="button" class="btn btn-outline-secondary outline aca-item">Academia de Data</button>
                 </li>
-                <li class="nav-item">
-                  <button type="button" class="btn btn-outline-secondary outline">Academia de Tecnología</button>
+                <li>
+                  <button type="button" class="btn btn-outline-secondary outline aca-item">Academia de Tecnología</button>
                 </li>
-                <li class="nav-item">
-                  <button type="button" class="btn btn-outline-secondary outline">Academia de Negocio</button>
+                <li>
+                  <button type="button" class="btn btn-outline-secondary outline aca-item">Academia de Negocio</button>
                 </li>
               </ul>
             </div>
@@ -138,174 +146,216 @@
         </div>
       </div>
       <div class="row row-6">
-        <div class="col-2 b-5">
+        <div class="col-xl-2 col b-5">
           <button type="button" class="btn btn-outline-secondary outline">Academia de Tecnología</button>
         </div>
-        <div class="col-2 b-6">
+        <div class="col-xl-2 col b-6">
           <button type="button" class="btn btn-outline-secondary outline">Academia de Negocio</button>
         </div>
       </div>
-      <div class="row row-7">
-        <div class="col-sm-2 col-6 c c-1">
+      <div class="row row-7-0 row-cols-1">
+        <div class="col c">
+          <div class="container c-7">
+            <div class="row"><img src="images/people.png" class="p-7-i"> </div>
+            <div class="row"><p class="p-7-1">Transformacion Digital</p></div>
+            <div class="row"><h6 class="p-7-2">Introducción a<br> las Metodologías Ágiles</h6> </div>
+            <div class="row row-7-0-1">
+              <div class="col-2">
+                <img src="images/lilpersons.png" class="p-7-i2">
+              </div>
+              <div class="col-9">
+                <p class="p-7-3">345 Alumnos</p>
+              </div>
+              <div class="col-12">
+                <img src="images/star.png" class="p-7-i3">
+                <h6 class="p-7-4">4,8</h6>
+              </div>
+            </div>
+            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="images/shopcart.png" class="cart"><h6 class="d">S/150.00</h6></button></div>
+          </div>
+        </div>
+        <div class="col c">
+          <div class="container c-7">
+            <div class="row"><img src="images/people.png" class="p-7-i"> </div>
+            <div class="row"><p class="p-7-1">Transformacion Digital</p></div>
+            <div class="row"><h6 class="p-7-2">Introducción a<br> las Metodologías Ágiles </h6> </div>
+            <div class="row row-7-0-1">
+              <div class="col-2">
+                <img src="images/lilpersons.png" class="p-7-i2">
+              </div>
+              <div class="col-4">
+                <p class="p-7-3">345 Alumnos</p>
+              </div>
+              <div class="col-12">
+                <img src="images/star.png" class="p-7-i3">
+                <h6 class="p-7-4">4,8</h6>
+              </div>
+            </div>
+            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="images/shopcart.png" class="cart"><h6 class="d">Gratis</h6></button></div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-7 row-cols-2 row-cols-sm-3 row-cols-lg-4">
+        <div class="col col-xl-2 c c-1">
           <div class="container c-7 c-a">
-            <div class="row"><img src="people.png" class="p-7-i"> </div>
+            <div class="row"><img src="images/people.png" class="p-7-i"> </div>
             <div class="row"><p class="p-7-1">Transformacion Digital</p></div>
             <div class="row"><h6 class="p-7-2">Introducción a<br> las Metodologías Ágiles</h6> </div>
             <div class="row">
               <div class="col-2">
-                <img src="lilpersons.png" class="p-7-i2">
+                <img src="images/lilpersons.png" class="p-7-i2">
               </div>
-              <div class="col-sm-4 col-9">
+              <div class="col-4">
                 <p class="p-7-3">345 Alumnos</p>
               </div>
-              <div class="col-12 col-sm-5 offset-sm-1">
-                <img src="star.png" class="p-7-i3">
+              <div class="col-12 col-md-5 offset-md-1">
+                <img src="images/star.png" class="p-7-i3">
                 <h6 class="p-7-4">4,8</h6>
               </div>
             </div>
-            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="shopcart.png" class="cart"><h6 class="d">S/150.00</h6></button></div>
+            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="images/shopcart.png" class="cart"><h6 class="d">S/150.00</h6></button></div>
           </div>
         </div>
-        <div class="col-sm-2 col-6 c">
+        <div class="col col-xl-2 c">
           <div class="container c-7 c-b">
-            <div class="row"><img src="people.png" class="p-7-i"> </div>
+            <div class="row"><img src="images/people.png" class="p-7-i"> </div>
             <div class="row"><p class="p-7-1">Transformacion Digital</p></div>
             <div class="row"><h6 class="p-7-2">Introducción a<br> las Metodologías Ágiles </h6> </div>
             <div class="row">
               <div class="col-2">
-                <img src="lilpersons.png" class="p-7-i2">
+                <img src="images/lilpersons.png" class="p-7-i2">
               </div>
               <div class="col-4">
                 <p class="p-7-3">345 Alumnos</p>
               </div>
-              <div class="col-12 col-sm-5 offset-sm-1">
-                <img src="star.png" class="p-7-i3">
+              <div class="col-12 col-md-5 offset-md-1">
+                <img src="images/star.png" class="p-7-i3">
                 <h6 class="p-7-4">4,8</h6>
               </div>
             </div>
-            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="shopcart.png" class="cart"><h6 class="d">Gratis</h6></button></div>
+            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="images/shopcart.png" class="cart"><h6 class="d">Gratis</h6></button></div>
           </div>
         </div>
-        <div class="col-sm-2 col-6 c">
+        <div class="col col-xl-2 c">
           <div class="container c-7 c-a c-c">
-            <div class="row"><img src="people.png" class="p-7-i"> </div>
+            <div class="row"><img src="images/people.png" class="p-7-i"> </div>
             <div class="row"><p class="p-7-1">Transformacion Digital</p></div>
             <div class="row"><h6 class="p-7-2">Introducción a<br> las Metodologías Ágiles </h6> </div>
             <div class="row">
               <div class="col-2">
-                <img src="lilpersons.png" class="p-7-i2">
+                <img src="images/lilpersons.png" class="p-7-i2">
               </div>
               <div class="col-4">
                 <p class="p-7-3">345 Alumnos</p>
               </div>
-              <div class="col-12 col-sm-5 offset-sm-1">
-                <img src="star.png" class="p-7-i3">
+              <div class="col-12 col-md-5 offset-md-1">
+                <img src="images/star.png" class="p-7-i3">
                 <h6 class="p-7-4">4,8</h6>
               </div>
             </div>
-            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="shopcart.png" class="cart"><h6 class="d">S/150.00</h6></button></div>
+            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="images/shopcart.png" class="cart"><h6 class="d">S/150.00</h6></button></div>
           </div>
         </div>
-        <div class="col-sm-2 col-6 c">
-          <div class="container c-7 c-b c-c" class="p-7-i2">
-            <div class="row"><img src="people.png" class="p-7-i"> </div>
+        <div class="col col-xl-2 c">
+          <div class="container c-7 c-b c-c c-d" class="p-7-i2">
+            <div class="row"><img src="images/people.png" class="p-7-i"> </div>
             <div class="row"><p class="p-7-1">Transformacion Digital</p></div>
             <div class="row"><h6 class="p-7-2">Introducción a<br> las Metodologías Ágiles </h6> </div>
             <div class="row">
               <div class="col-2">
-                <img src="lilpersons.png" class="p-7-i2">
+                <img src="images/lilpersons.png" class="p-7-i2">
               </div>
               <div class="col-4">
                 <p class="p-7-3">345 Alumnos</p>
               </div>
-              <div class="col-12 col-sm-5 offset-sm-1">
-                <img src="star.png" class="p-7-i3">
+              <div class="col-12 col-md-5 offset-md-1">
+                <img src="images/star.png" class="p-7-i3">
                 <h6 class="p-7-4">4,8</h6>
               </div>
             </div>
-            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="shopcart.png" class="cart"><h6 class="d">S/150.00</h6></button></div>
+            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="images/shopcart.png" class="cart"><h6 class="d">S/150.00</h6></button></div>
           </div>
         </div>
       </div>
-      <div class="row row-8">
-        <div class="col-2 c c-1">
-          <div class="container c-7">
-            <div class="row"><img src="people.png" class="p-7-i"> </div>
+      <div class="row row-8 row-cols-sm-3 row-cols-lg-4">
+        <div class="col col-xl-2 c c-1">
+          <div class="container c-7 c-a">
+            <div class="row"><img src="images/people.png" class="p-7-i"> </div>
             <div class="row"><p class="p-7-1">Transformacion Digital</p></div>
             <div class="row"><h6 class="p-7-2">Introducción a<br> las Metodologías Ágiles </h6> </div>
             <div class="row">
               <div class="col-2">
-                <img src="lilpersons.png" class="p-7-i2">
+                <img src="images/lilpersons.png" class="p-7-i2">
               </div>
               <div class="col-4">
                 <p class="p-7-3">345 Alumnos</p>
               </div>
               <div class="col-5 offset-1">
-                <img src="star.png" class="p-7-i3">
+                <img src="images/star.png" class="p-7-i3">
                 <h6 class="p-7-4">4,8</h6>
               </div>
             </div>
-            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="shopcart.png" class="cart"><h6 class="d">S/150.00</h6></button></div>
+            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="images/shopcart.png" class="cart"><h6 class="d">S/150.00</h6></button></div>
           </div>
         </div>
-        <div class="col-2 c">
-          <div class="container c-7">
-            <div class="row"><img src="people.png" class="p-7-i"> </div>
+        <div class="col col-xl-2 c">
+          <div class="container c-7 c-b">
+            <div class="row"><img src="images/people.png" class="p-7-i"> </div>
             <div class="row"><p class="p-7-1">Transformacion Digital</p></div>
             <div class="row"><h6 class="p-7-2">Introducción a<br> las Metodologías Ágiles </h6> </div>
             <div class="row">
               <div class="col-2">
-                <img src="lilpersons.png" class="p-7-i2">
+                <img src="images/lilpersons.png" class="p-7-i2">
               </div>
               <div class="col-4">
                 <p class="p-7-3">345 Alumnos</p>
               </div>
               <div class="col-5 offset-1">
-                <img src="star.png" class="p-7-i3">
+                <img src="images/star.png" class="p-7-i3">
                 <h6 class="p-7-4">4,8</h6>
               </div>
             </div>
-            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="shopcart.png" class="cart"><h6 class="d">Gratis</h6></button></div>
+            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="images/shopcart.png" class="cart"><h6 class="d">Gratis</h6></button></div>
           </div>
         </div>
-        <div class="col-2 c">
-          <div class="container c-7">
-            <div class="row"><img src="people.png" class="p-7-i"> </div>
+        <div class="col col-xl-2 c">
+          <div class="container c-7 c-a c-c">
+            <div class="row"><img src="images/people.png" class="p-7-i"> </div>
             <div class="row"><p class="p-7-1">Transformacion Digital</p></div>
             <div class="row"><h6 class="p-7-2">Introducción a<br> las Metodologías Ágiles </h6> </div>
             <div class="row">
               <div class="col-2">
-                <img src="lilpersons.png" class="p-7-i2">
+                <img src="images/lilpersons.png" class="p-7-i2">
               </div>
               <div class="col-4">
                 <p class="p-7-3">345 Alumnos</p>
               </div>
               <div class="col-5 offset-1">
-                <img src="star.png" class="p-7-i3">
+                <img src="images/star.png" class="p-7-i3">
                 <h6 class="p-7-4">4,8</h6>
               </div>
             </div>
-            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="shopcart.png" class="cart"><h6 class="d">Gratis</h6></button></div>
+            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="images/shopcart.png" class="cart"><h6 class="d">Gratis</h6></button></div>
           </div>
         </div>
-        <div class="col-2 c">
-          <div class="container c-7">
-            <div class="row"><img src="people.png" class="p-7-i"> </div>
+        <div class="col col-xl-2 c">
+          <div class="container c-7 c-b c-c c-d">
+            <div class="row"><img src="images/people.png" class="p-7-i"> </div>
             <div class="row"><p class="p-7-1">Transformacion Digital</p></div>
             <div class="row"><h6 class="p-7-2">Introducción a<br> las Metodologías Ágiles </h6> </div>
             <div class="row">
               <div class="col-2">
-                <img src="lilpersons.png" class="p-7-i2">
+                <img src="images/lilpersons.png" class="p-7-i2">
               </div>
               <div class="col-4">
                 <p class="p-7-3">345 Alumnos</p>
               </div>
               <div class="col-5 offset-1">
-                <img src="star.png" class="p-7-i3">
+                <img src="images/star.png" class="p-7-i3">
                 <h6 class="p-7-4">4,8</h6>
               </div>
             </div>
-            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="shopcart.png" class="cart"><h6 class="d">S/150.00</h6></button></div>
+            <div class="row p"><button type="button" class="btn btn-primary buy"><img src="images/shopcart.png" class="cart"><h6 class="d">S/150.00</h6></button></div>
           </div>
         </div>
       </div>
@@ -314,7 +364,7 @@
       </div>
       <div class="block2">
         <div class="row row-10 center">
-          <div class="col-sm-6 offset-sm-3 col-12">
+          <div class="col center">
             <p class="p-10-1">Tipos de Entrenamiento</p>
             <h6 class="p-10-2">Re-inventamos la educación y te ofrecemos cursos que te ayudaran en el reskilling & upskilling.</h6>
           </div>
@@ -327,10 +377,10 @@
               </div>
               <div class="col-6">
                 <div class="row">
-                  <img src="aprendizajeOnline.png">
+                  <img src="images/aprendizajeOnline.png" class="p-11-i">
                 </div>
                 <div class="row">
-                  <p class="p-11-2">Aprendizaje<br> Online</p>
+                  <p class="p-11-2">Aprendizaje Online</p>
                 </div>
                 <div class="row">
                   <p class="p-11-3">Re-inventamos la<br> educación y te<br> ofrecemos cursos que<br> te ayudaran.</p>
@@ -345,7 +395,7 @@
               </div>
               <div class="col-6">
                 <div class="row">
-                  <img src="workshopsBootcamps.png">
+                  <img src="images/workshopsBootcamps.png" class="p-11-i">
                 </div>
                 <div class="row">
                   <p class="p-11-2">Workshops y Bootcamps</p>
@@ -363,7 +413,7 @@
               </div>
               <div class="col-6">
                 <div class="row">
-                  <img src="coachingMentoring.png">
+                  <img src="images/coachingMentoring.png" class="p-11-i">
                 </div>
                 <div class="row">
                   <p class="p-11-2">Coaching y Mentoring</p>
@@ -381,7 +431,7 @@
               </div>
               <div class="col-6">
                 <div class="row">
-                  <img src="upskillAssesment.png">
+                  <img src="images/upskillAssesment.png" class="p-11-i">
                 </div>
                 <div class="row">
                   <p class="p-11-2">Upskill<br> Assesment</p>
@@ -393,83 +443,85 @@
             </div>
           </div>
         </div>
-        <div class="row-11-5">
-          <div id="carousel-2" class="carousel slide" data-ride="carousel2">
-            <ol class="carousel-indicators indicators-2">
-              <li data-target="#carousel-2" data-slide-to="0" class="ind-2 active"> <img src="circulo.png" class="circle-2"> </li>
-              <li data-target="#carousel-2" data-slide-to="1" class="ind-2"> <img src="circulo.png" class="circle-2"> </li>
-              <li data-target="#carousel-2" data-slide-to="2" class="ind-2"> <img src="circulo.png" class="circle-2"> </li>
-              <li data-target="#carousel-2" data-slide-to="3" class="ind-2"> <img src="circulo.png" class="circle-2"> </li>
-            </ol>
-            <div class="carousel-inner carousel-2">
-              <div class="carousel-item e-c active">
-                <div class="row">
-                  <div class="col-4 col-sm-6">
-                    <p class="p-11-1">01</p>
-                  </div>
-                  <div class="col-8 col-sm-6">
-                    <div class="row">
-                      <img src="aprendizajeOnline.png" class="p-11-i">
+        <div class="row row-11-5">
+          <div class="col">
+            <div id="carousel-2" class="carousel carousel-2 slide" data-ride="carousel2">
+              <ol class="carousel-indicators indicators-2">
+                <li data-target=".carousel-2" data-slide-to="0" class="ind-2 active"> <img src="images/circulo.png" class="circle-2"> </li>
+                <li data-target=".carousel-2" data-slide-to="1" class="ind-2"> <img src="images/circulo.png" class="circle-2"> </li>
+                <li data-target=".carousel-2" data-slide-to="2" class="ind-2"> <img src="images/circulo.png" class="circle-2"> </li>
+                <li data-target=".carousel-2" data-slide-to="3" class="ind-2"> <img src="images/circulo.png" class="circle-2"> </li>
+              </ol>
+              <div class="carousel-inner carousel-2">
+                <div class="carousel-item e-c active">
+                  <div class="row">
+                    <div class="col-4">
+                      <p class="p-11-1">01</p>
                     </div>
-                    <div class="row">
-                      <p class="p-11-2">Aprendizaje<br> Online</p>
-                    </div>
-                    <div class="row">
-                      <p class="p-11-3">Re-inventamos la<br> educación y te<br> ofrecemos cursos que<br> te ayudaran.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item e-c">
-                <div class="row">
-                  <div class="col-4 col-sm-6">
-                    <p class="p-11-1">02</p>
-                  </div>
-                  <div class="col-8 col-sm-6">
-                    <div class="row">
-                      <img src="workshopsBootcamps.png" class="p-11-i">
-                    </div>
-                    <div class="row">
-                      <p class="p-11-2">Workshops y Bootcamps</p>
-                    </div>
-                    <div class="row">
-                      <p class="p-11-3">Re-inventamos la<br> educación y te<br> ofrecemos cursos que<br> te ayudaran.</p>
+                    <div class="col-8">
+                      <div class="row">
+                        <img src="images/aprendizajeOnline.png" class="p-11-i">
+                      </div>
+                      <div class="row">
+                        <p class="p-11-2">Aprendizaje<br> Online</p>
+                      </div>
+                      <div class="row">
+                        <p class="p-11-3">Re-inventamos la<br> educación y te<br> ofrecemos cursos que<br> te ayudaran.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="carousel-item e-c">
-                <div class="row">
-                  <div class="col-4 col-sm-6">
-                    <p class="p-11-1">03</p>
-                  </div>
-                  <div class="col-8 col-sm-6">
-                    <div class="row">
-                      <img src="coachingMentoring.png" class="p-11-i">
+                <div class="carousel-item e-c">
+                  <div class="row">
+                    <div class="col-4">
+                      <p class="p-11-1">02</p>
                     </div>
-                    <div class="row">
-                      <p class="p-11-2">Coaching y Mentoring</p>
-                    </div>
-                    <div class="row">
-                      <p class="p-11-3">Re-inventamos la<br> educación y te<br> ofrecemos cursos que<br> te ayudaran.</p>
+                    <div class="col-8">
+                      <div class="row">
+                        <img src="images/workshopsBootcamps.png" class="p-11-i">
+                      </div>
+                      <div class="row">
+                        <p class="p-11-2">Workshops y Bootcamps</p>
+                      </div>
+                      <div class="row">
+                        <p class="p-11-3">Re-inventamos la<br> educación y te<br> ofrecemos cursos que<br> te ayudaran.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="carousel-item e-c">
-                <div class="row">
-                  <div class="col-4 col-sm-6">
-                    <p class="p-11-1">04</p>
+                <div class="carousel-item e-c">
+                  <div class="row">
+                    <div class="col-4">
+                      <p class="p-11-1">03</p>
+                    </div>
+                    <div class="col-8">
+                      <div class="row">
+                        <img src="images/coachingMentoring.png" class="p-11-i">
+                      </div>
+                      <div class="row">
+                        <p class="p-11-2">Coaching y Mentoring</p>
+                      </div>
+                      <div class="row">
+                        <p class="p-11-3">Re-inventamos la<br> educación y te<br> ofrecemos cursos que<br> te ayudaran.</p>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-8 col-sm-6">
-                    <div class="row">
-                      <img src="upskillAssesment.png" class="p-11-i">
+                </div>
+                <div class="carousel-item e-c">
+                  <div class="row">
+                    <div class="col-4">
+                      <p class="p-11-1">04</p>
                     </div>
-                    <div class="row">
-                      <p class="p-11-2">Upskill<br> Assesment</p>
-                    </div>
-                    <div class="row">
-                      <p class="p-11-3">Re-inventamos la<br> educación y te<br> ofrecemos cursos que<br> te ayudaran.</p>
+                    <div class="col-8">
+                      <div class="row">
+                        <img src="images/upskillAssesment.png" class="p-11-i">
+                      </div>
+                      <div class="row">
+                        <p class="p-11-2">Upskill<br> Assesment</p>
+                      </div>
+                      <div class="row">
+                        <p class="p-11-3">Re-inventamos la<br> educación y te<br> ofrecemos cursos que<br> te ayudaran.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -479,7 +531,7 @@
         </div>
       </div>
       <div class="row row-12">
-        <div class="col-10 offset-1 col-sm-6 offset-sm-3">
+        <div class="col-10 offset-1">
           <div class="row center">
             <p class="p-12-1">Nuestros Mentores</p>
           </div>
@@ -491,39 +543,39 @@
       <div class="row row-13">
         <div id="carousel" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators indicators-1">
-            <li data-target="#carousel" data-slide-to="0" class="ind-1 active"> <img src="circulo.png" class="circle"> </li>
-            <li data-target="#carousel" data-slide-to="1" class="ind-1"> <img src="circulo.png" class="circle"> </li>
-            <li data-target="#carousel" data-slide-to="2" class="ind-1"> <img src="circulo.png" class="circle"> </li>
-            <li data-target="#carousel" data-slide-to="3" class="ind-1"> <img src="circulo.png" class="circle"> </li>
-            <li data-target="#carousel" data-slide-to="4" class="ind-1"> <img src="circulo.png" class="circle"> </li>
+            <li data-target="#carousel" data-slide-to="0" class="ind-1 active"> <img src="images/circulo.png" class="circle"> </li>
+            <li data-target="#carousel" data-slide-to="1" class="ind-1"> <img src="images/circulo.png" class="circle"> </li>
+            <li data-target="#carousel" data-slide-to="2" class="ind-1"> <img src="images/circulo.png" class="circle"> </li>
+            <li data-target="#carousel" data-slide-to="3" class="ind-1"> <img src="images/circulo.png" class="circle"> </li>
+            <li data-target="#carousel" data-slide-to="4" class="ind-1"> <img src="images/circulo.png" class="circle"> </li>
           </ol>
           <div class="carousel-inner carousel-1">
             <div class="carousel-item container c-13 center active">
-              <div class="row"><img src="mentores.png" class="p-13-i"></div>
+              <div class="row"><img src="images/mentores.png" class="p-13-i"></div>
               <div class="row"><p class="p-13-1">Abner Ballardo</p></div>
               <div class="row"><p class="p-13-2">Head of Agile CoE</p></div>
               <div class="row"><p class="p-13-3">Belcorp</p></div>
             </div>
             <div class="carousel-item container c-13 center">
-              <div class="row"><img src="mentores.png" class="p-13-i"></div>
+              <div class="row"><img src="images/mentores.png" class="p-13-i"></div>
               <div class="row"><p class="p-13-1">Abner Ballardo</p></div>
               <div class="row"><p class="p-13-2">Head of Agile CoE</p></div>
               <div class="row"><p class="p-13-3">Belcorp</p></div>
             </div>
             <div class="carousel-item container c-13 center">
-              <div class="row"><img src="mentores.png" class="p-13-i"></div>
+              <div class="row"><img src="images/mentores.png" class="p-13-i"></div>
               <div class="row"><p class="p-13-1">Abner Ballardo</p></div>
               <div class="row"><p class="p-13-2">Head of Agile CoE</p></div>
               <div class="row"><p class="p-13-3">Belcorp</p></div>
             </div>
             <div class="carousel-item container c-13 center">
-              <div class="row"><img src="mentores.png" class="p-13-i"></div>
+              <div class="row"><img src="images/mentores.png" class="p-13-i"></div>
               <div class="row"><p class="p-13-1">Abner Ballardo</p></div>
               <div class="row"><p class="p-13-2">Head of Agile CoE</p></div>
               <div class="row"><p class="p-13-3">Belcorp</p></div>
             </div>
             <div class="carousel-item container c-13 center">
-              <div class="row"><img src="mentores.png" class="p-13-i"></div>
+              <div class="row"><img src="images/mentores.png" class="p-13-i"></div>
               <div class="row"><p class="p-13-1">Abner Ballardo</p></div>
               <div class="row"><p class="p-13-2">Head of Agile CoE</p></div>
               <div class="row"><p class="p-13-3">Belcorp</p></div>
@@ -533,7 +585,7 @@
       </div>
       <div class="block3">
         <div class="row row-15">
-          <div class="col-6 col-sm-5 order-sm-1 order-2 f-1">
+          <div class="col-6 col-md-5 order-lg-1 order-2 f-1">
             <div class="row row-15-1">
               <h6 class="p-15-1">¿Quieres una capacitación<br> personalizada para tu equipo?</h6>
             </div>
@@ -542,40 +594,44 @@
             </div>
             <div class="row row-15-3">
               <div class="col-12">
-                <img src="mail.png" class="p-15-i">
-                <span class="p-15-3">hola@enestadobeta.la </span>
-                <img src="phone.png" class="p-15-i-2">
-                <span class="p-15-3">999 553 828</span>
+                <div class="row">
+                  <img src="images/mail.png" class="p-15-i">
+                  <span class="p-15-3">hola@enestadobeta.la </span>
+                </div>
+                <div class="row">
+                  <img src="images/phone.png" class="p-15-i-2">
+                  <span class="p-15-4">999 553 828</span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-5 col-sm-5 order-sm-2 order-1 f-2">
+          <div class="col-5 col-md-5 order-lg-2 order-1 f-2">
             <div class="row center parent">
-              <img src="bigphone.png" class="p-15-i-3">
-              <img src="logochar.png" class="p-15-i-4">
+              <img src="images/bigphone.png" class="p-15-i-3">
+              <img src="images/logochar.png" class="p-15-i-4">
             </div>
           </div>
         </div>
       </div>
       <div class="row row-16">
-        <div class="col-10 offset-1 col-sm-6 offset-sm-3">
+        <div class="col-10 offset-1">
           <div class="row center">
             <p class="p-16-1">Estas empresas ya confiaron en nosotros</p>
           </div>
         </div>
-        <div class="col-10 offset-1 col-sm-6 offset-sm-3">
+        <div class="col-10 offset-1">
           <div class="row center">
             <p class="p-16-2">con las mejores capacitaciones en transformación digital para sus equipos</p>
           </div>
         </div>
       </div>
       <div class="row row-17 center">
-        <img src="brands.png" class="p-17-i">
+        <img src="images/brands.png" class="p-17-i">
       </div>
       <footer class="footer">
         <div class="row row-18">
           <div class="col-2 center" >
-            <img src="logo.png" class="p-18-i">
+            <img src="images/logo.png" class="p-18-i">
           </div>
           <div class="col-6 offset-4">
             <div class="row center">
@@ -591,7 +647,6 @@
         interval: false;
       })
     </script>
-
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp-10-1G7niu735Sk7lN" crossorigin="anonymous"></script>
